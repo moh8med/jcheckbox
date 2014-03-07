@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>jCheckbox</title>
+
+	<meta name="description" conetnt="Cross-browser CSS3/jQuery Checkboxes and Radio buttons plugin.">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/src/jcheckbox.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+	<form action="" method="post">
+
+		<h1>jCheckbox</h1>
+		<p class="desc">Cross-browser CSS3/jQuery Checkboxes and Radio buttons plugin.</p>
+
+		<div id="checkboxes" class="row">
+			<h3>Checkboxes</h3>
+			<label>
+				<input type="checkbox" name="fruits[]" value="Apple" checked> Apple</label><br>
+			<label>
+				<input type="checkbox" name="fruits[]" value="Orange" checked> Orange</label><br>
+			<label>
+				<input type="checkbox" name="fruits[]" value="Blackberry"> Blackberry</label><br>
+		</div>
+
+		<!-- <br> -->
+		&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+
+		<div id="radio-buttons" class="row">
+			<h3>Radio buttons</h3>
+			<label>
+				<input type="radio" name="sports" value="Football"> Football</label><br>
+			<label>
+				<input type="radio" name="sports" value="Basketball" checked> Basketball</label><br>
+			<label>
+				<input type="radio" name="sports" value="Tennis"> Tennis</label>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<h3>Auto Convert</h3>
+			<label class="jcheckbox">
+				<input type="checkbox" name="new_name[]" value="Apple" checked> Apple</label><br>
+			<label class="jcheckbox">
+				<input type="checkbox" name="new_name[]" value="Orange" checked> Orange</label><br>
+			<label class="jcheckbox">
+				<input type="checkbox" name="new_name[]" value="Blackberry"> Blackberry</label><br>
+		</div>
+		&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+
+		<div id="radio-buttons" class="row">
+			<h3>Auto convert</h3>
+			<label class="jcheckbox">
+				<input type="radio" name="sports_2" value="Football"> Football</label><br>
+			<label class="jcheckbox">
+				<input type="radio" name="sports_2" value="Basketball" checked> Basketball</label><br>
+			<label class="jcheckbox">
+				<input type="radio" name="sports_2" value="Tennis"> Tennis</label>
+		</div>
+
+	</form>
+
+	<div class="footer">By <a href="http://twitter.com/moh8med">@moh8med</a></div>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jcheckbox.js"></script>
+<script>
+// $(".jcheckbox:not(.rounded)").jCheckbox({
+$("#checkboxes label").jCheckbox({
+	// rounded: true,
+	// borderColor: "#e5e5e5", 
+	// background: "#e5e5e5",
+	activeBorderColor: "orange",
+	activeBackground: "orange"
+
+});
+$("#radio-buttons label").jCheckbox({rounded: true});
+</script>
+
+</body>
+</html>
